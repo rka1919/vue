@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
     <script src="http://unpkg.com/vue@3/dist/vue.global.js"></script>
 
 </head>
@@ -15,23 +17,21 @@
         <p><input type="text" placeholder="이름을 입력하세요" v-model="name">
         </p>
         <p>
-            <label>남자 <input type="radio">
+            <label>남자
                 <input type="radio" v-model="gender" value="male"></label>
-            <label>여자 <input type="radio">
+            <label>여자
                 <input type="radio" v-model="gender" value="female"></label>
-
         </p>
         <p>
-            <select>
                 <select v-model="전공">
-                    <option value="">전자공학</option>
-                    <option value="스프">소프트웨어공학</option>
-                    <option value="">건축공학</option>
-                    <option value="">토목공학</option>
+                    <option>전자공학</option>
+                    <option value="소프">소프트웨어공학</option>
+                    <option>건축공학</option>
+                    <option>토목공학</option>
                 </select>
         </p>
         <p>
-            <label for=""><input type="checkbox">활성화</label>
+            <label for=""><input type="checkbox" v-model="value">활성화</label>
         </p>
         <hr>
         <p>{{name}}</p>
